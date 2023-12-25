@@ -1,8 +1,7 @@
-package com.kuma.fastfood.repository;
+package com.kuma.book.repository;
 
-import com.kuma.fastfood.dto.model.Auth;
-import com.kuma.fastfood.dto.model.Book;
-import com.kuma.fastfood.dto.model.Customer;
+import com.kuma.book.dto.model.Auth;
+import com.kuma.book.dto.model.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

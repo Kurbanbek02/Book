@@ -1,11 +1,9 @@
-package com.kuma.fastfood.service.impl;
+package com.kuma.book.service.impl;
 
-import com.kuma.fastfood.dto.model.Auth;
-import com.kuma.fastfood.dto.model.Book;
-import com.kuma.fastfood.repository.AuthRepository;
-import com.kuma.fastfood.service.AuthService;
+import com.kuma.book.dto.model.Auth;
+import com.kuma.book.repository.AuthRepository;
+import com.kuma.book.service.AuthService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

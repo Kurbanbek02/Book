@@ -1,24 +1,19 @@
-package com.kuma.fastfood;
+package com.kuma.book;
 
-import com.kuma.fastfood.dto.model.Auth;
-import com.kuma.fastfood.dto.model.Book;
-import com.kuma.fastfood.dto.model.Customer;
-import com.kuma.fastfood.dto.model.Order;
-import com.kuma.fastfood.repository.AuthRepository;
-import com.kuma.fastfood.service.AuthService;
-import com.kuma.fastfood.service.BookService;
-import com.kuma.fastfood.service.CustomerService;
-import com.kuma.fastfood.service.OrderService;
-import com.kuma.fastfood.service.impl.AuthServiceImpl;
+import com.kuma.book.dto.model.Auth;
+import com.kuma.book.dto.model.Book;
+import com.kuma.book.dto.model.Customer;
+import com.kuma.book.dto.model.Order;
+import com.kuma.book.service.AuthService;
+import com.kuma.book.service.BookService;
+import com.kuma.book.service.CustomerService;
+import com.kuma.book.service.OrderService;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.propertyeditors.CustomMapEditor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-import java.sql.SQLOutput;
-import java.time.LocalDateTime;
 import java.util.*;
 
 @SpringBootApplication

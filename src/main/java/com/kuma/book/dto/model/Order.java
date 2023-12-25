@@ -1,4 +1,4 @@
-package com.kuma.fastfood.dto.model;
+package com.kuma.book.dto.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -6,9 +6,7 @@ import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "zakaz")

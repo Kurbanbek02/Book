@@ -1,6 +1,6 @@
-package com.kuma.fastfood.repository;
+package com.kuma.book.repository;
 
-import com.kuma.fastfood.dto.model.Order;
+import com.kuma.book.dto.model.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

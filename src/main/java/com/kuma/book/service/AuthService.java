@@ -1,7 +1,6 @@
-package com.kuma.fastfood.service;
+package com.kuma.book.service;
 
-import com.kuma.fastfood.dto.model.Auth;
-import com.kuma.fastfood.dto.model.Order;
+import com.kuma.book.dto.model.Auth;
 
 import java.util.List;
 

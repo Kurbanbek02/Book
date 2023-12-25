@@ -1,12 +1,10 @@
-package com.kuma.fastfood.service.impl;
+package com.kuma.book.service.impl;
 
-import com.kuma.fastfood.dto.model.Book;
-import com.kuma.fastfood.dto.model.Order;
-import com.kuma.fastfood.repository.OrderRepository;
-import com.kuma.fastfood.service.OrderService;
+import com.kuma.book.dto.model.Order;
+import com.kuma.book.repository.OrderRepository;
+import com.kuma.book.service.OrderService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
