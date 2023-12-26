@@ -17,9 +17,9 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import java.util.*;
 
 @SpringBootApplication
-@EntityScan(basePackages = "com.kuma.fastfood.dto.model")
+@EntityScan(basePackages = "com.kuma.book.dto.model")
 @RequiredArgsConstructor
-public class FastFoodApplication {
+public class BookApplication {
 
     private final AuthService authService;
     private final BookService bookService;
@@ -89,7 +89,9 @@ public class FastFoodApplication {
                                }
                                break;
                            case(4):
-                               System.out.println(bookService.findHighestSold());
+                               for (Book book : bookService.findHighestSold()) {
+                                   System.out.println(book);
+                               }
                                break;
                            case(5):
                                for (Auth auth : bookService.findBookByAuthHighestSold()) {
@@ -100,7 +102,9 @@ public class FastFoodApplication {
                                System.out.println(customerService.getHighestSold());
                                break;
                            case(7):
-                               System.out.println(bookService.findLowStock().getName());
+                               for (Book book : bookService.findLowStock()) {
+                                   System.out.println(book);
+                               }
                                break;
                            case(8):
                                System.out.println(bookService.getSum());
@@ -128,7 +132,7 @@ public class FastFoodApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(FastFoodApplication.class, args);
+        SpringApplication.run(BookApplication.class, args);
     }
 
 }

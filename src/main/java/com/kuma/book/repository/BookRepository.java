@@ -14,11 +14,11 @@ public interface BookRepository extends JpaRepository<Book, Long> {
    @Query("SELECT b from Book b inner join b.auths  a where a.id = :authId")
    List<Book> findAllByAuthId(Long  authId);
 //
-   @Query(" SELECT max(b.sold) FROM Book b")
-   Long findHighestSold();
+   @Query("select bo from Book bo where bo.income = (SELECT max(b.income) FROM Book b)")
+   List<Book> findHighestSold();
 //
-   @Query(" SELECT b FROM Book b where b.sold = (select min(bo.sold) from Book bo)")
-   Optional<Book> findLowStock();
+   @Query(" SELECT b FROM Book b where b.stock = (select min(bo.stock) from Book bo)")
+   List<Book> findLowStock();
 //
    @Query("select b.sold from Book b where b.name = :name")
    Long findBookByName(String name);

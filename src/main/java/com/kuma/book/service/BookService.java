@@ -11,9 +11,9 @@ public interface BookService {
      void deleteById(Long id);
      Book findById(Long id);
      List<Book> findAllByAuthId(Long id);
-     Long findHighestSold();
+     List<Book> findHighestSold();
 
-     Book findLowStock();
+     List<Book> findLowStock();
      Long findBookByName(String name);
      List<Auth> findBookByAuthHighestSold();
 

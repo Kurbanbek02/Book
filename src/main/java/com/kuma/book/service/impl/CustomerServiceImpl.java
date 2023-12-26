@@ -28,10 +28,6 @@ public class CustomerServiceImpl implements CustomerService {
         return repository.findById(id).get();
     }
 
-    public Long findHighestAmountOfPurchases(){
-        return repository.findHighestAmountOfPurchases();
-    }
-
    public  List<Customer> findAllBySold(){
         List<Customer> customers = repository.findAll();
        return customers.stream().filter(customer -> customer.getOrders().size()>0).toList();

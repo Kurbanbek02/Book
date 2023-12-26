@@ -10,7 +10,6 @@ public interface CustomerService {
     public void deleteById(Long id);
     public Customer findById(Long id);
 
-    Long findHighestAmountOfPurchases();
 
     List<Customer> findAllBySold();
     List<Customer> findAllByNoSold();

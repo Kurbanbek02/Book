@@ -32,12 +32,12 @@ public class BookServiceImpl implements BookService {
         return repository.findAllByAuthId(id);
     }
 
-    public Long findHighestSold(){
+    public List<Book> findHighestSold(){
         return repository.findHighestSold();
     }
 
-    public Book findLowStock(){
-        return repository.findLowStock().get();
+    public List<Book> findLowStock(){
+        return repository.findLowStock();
     }
 
     public Long findBookByName(String name){
